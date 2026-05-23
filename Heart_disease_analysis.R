@@ -3,7 +3,7 @@
 #Dataset: UCI Heart Disease Cleveland dataset
 #Aim: explore clinical variables that associate with heart disease and build a logistic regression model for interpretation
 
-# 1. load packafes
+# 1. load packages
 library(ggplot2)
 
 # 2. Load data
@@ -18,7 +18,7 @@ colnames(heart) <- c(
   "thal", "diagnosis"
 )
 
-# 3. Create ouputs folder
+# 3. Create outputs folder
 if (!dir.exists("outputs")) {
   dir.create("outputs")
 }
