@@ -1,2 +1,97 @@
 # Heart disease exploration and prediction in R
 Exploratory analysis and interpretable prediction using the UCI Heart Disease dataset in R
+
+## Project overview
+
+This project uses the public UCI Cleveland Heart Disease dataset to explore clinical variables associated with heart disease and build a simple logistic model. 
+
+The aim of this project is to demonstrate a clear R workflow including data cleaning, exploratory summaries, visualisation, feature selection, model fitting and model evaluation.
+
+## Dataset
+
+The dataset used is the processed Cleveland Heart Disease dataset from the UCI Machine Learning Repository.
+
+The original diagnosis variable ranges from 0 to 4. In this project, I used this variable in two ways:
+
+- 'diagnosis' was kept for exploratory analysis of diagnosis level.
+- 'disease_binary' was created for modelling, where:
+  - '0' = no heart disease
+  - '1' = heart disease present
+
+Rows with missing values were removed before modelling.
+
+## Pipeline
+
+1. Load the dataset
+2. Check missing data and save a missing data summary
+3. Remove rows with missing values
+4. Recode the heart disease outcome into a binary variable
+5. Convert categorical variables into factors.
+6. Create exploratory summary tables.
+7. Produce exploratory plots.
+8. Select features based on exploratory analysis and clinical relevance.
+9. Split the data into training and test sets.
+10. Fit a logistic regression model.
+11. Predict heart disease status on the test set.
+12. Evaluate performance using accuracy, sensitivity and specificity.
+
+## Exploratory analysis
+
+The exploratory analysis includes:
+
+- missing data summary
+- outcome balance table
+- numerical summaries by heart disease status
+- age distribution
+- age by diagnosis level
+- maximum heart rate by heart disease status
+- oldpeak by heart disease status
+- exercise-induced angina by heart disease status
+
+These outputs were used to better understand the dataset before fitting the model.
+
+## Model
+
+A logistic regression model was fitted because the outcome was binary and the method is interpretable.
+
+The model used the following predictors:
+
+- age
+- sex
+- chest pain type
+- maximum heart rate
+- exercise-induced angina
+- oldpeak
+- number of major vessels
+- thalassemia status
+
+The original diagnosis variable was not used as a predictor because it was used to define the binary outcome.
+
+## Outputs
+
+The outputs folder contains:
+- missing_data_summary.csv
+- outcome_summary.csv
+- numeric_summary_by_disease.csv
+- age_histogram.png
+- outcome_counts.png
+- age_by_diagnosis_level.png
+- max_heart_rate_by_disease.png
+- oldpeak_by_disease.png
+- exercise_angina_by_disease.png
+- confusion_matrix.csv
+- model_performance.csv
+- model_summary.txt
+
+## Packages used
+
+This project uses 'ggplot'
+The rest of the analysis uses base R.
+
+## Limitations of analysis
+
+This is a small public dataset from a single source, so the model should not be used as a clinical prediction tool.
+
+A single train/test split was used for simplicity. Future work could use repeated cross-validation and external validation to obtain a more robust estimate of model performance.
+
+The purpose of this project is to demonstrate R coding, data cleaning, exploratory analysis, interpretable modelling and documentation of a reproducible workflow.
