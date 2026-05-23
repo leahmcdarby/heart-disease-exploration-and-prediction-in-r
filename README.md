@@ -70,18 +70,13 @@ The original diagnosis variable was not used as a predictor because it was used 
 ## Outputs
 
 The outputs folder contains:
-- missing_data_summary.csv
-- outcome_summary.csv
-- numeric_summary_by_disease.csv
-- age_histogram.png
-- outcome_counts.png
-- age_by_diagnosis_level.png
-- max_heart_rate_by_disease.png
-- oldpeak_by_disease.png
-- exercise_angina_by_disease.png
-- confusion_matrix.csv
-- model_performance.csv
-- model_summary.txt
+- missing_data_summary.csv summarises missing values before cleaning.
+- outcome_summary.csv shows the number and percentage of patients with and without heart disease.
+- numeric_summary_by_disease.csv compares mean values of key numerical variables by heart disease status.
+- age_histogram.png shows the age distribution in the dataset.
+- confusion_matrix.csv compares predicted and actual disease status in the test set.
+- model_performance.csv reports accuracy, sensitivity and specificity.
+- model_summary.txt contains the logistic regression output, confusion matrix, model performance and the Spearman correlation between age and diagnosis level.
 
 ## Packages used
 
