@@ -1,0 +1,62 @@
+Logistic regression model summary
+
+
+Call:
+glm(formula = disease_binary ~ age + sex + chest_pain + max_heart_rate + 
+    exercise_angina + oldpeak + major_vessels + thal, family = binomial, 
+    data = train_data)
+
+Coefficients:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)      -2.903247   3.228338  -0.899 0.368492    
+age               0.004275   0.028630   0.149 0.881312    
+sexMale           1.335264   0.623194   2.143 0.032144 *  
+chest_pain2       0.976786   0.819200   1.192 0.233118    
+chest_pain3      -0.095842   0.737610  -0.130 0.896617    
+chest_pain4       1.815311   0.721215   2.517 0.011835 *  
+max_heart_rate   -0.013450   0.013627  -0.987 0.323643    
+exercise_angina1  0.511789   0.522137   0.980 0.326997    
+oldpeak           0.899574   0.253395   3.550 0.000385 ***
+major_vessels     1.314857   0.324785   4.048 5.16e-05 ***
+thal6             0.181738   0.917400   0.198 0.842966    
+thal7             1.795390   0.486313   3.692 0.000223 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 286.42  on 207  degrees of freedom
+Residual deviance: 138.12  on 196  degrees of freedom
+AIC: 162.12
+
+Number of Fisher Scoring iterations: 6
+
+
+Confusion matrix
+
+         Actual
+Predicted  0  1
+        0 41  9
+        1  5 34
+
+Model performance
+
+   accuracy sensitivity specificity
+1 0.8426966   0.7906977   0.8913043
+
+Spearman correlation between age and diagnosis level
+
+
+	Spearman's rank correlation rho
+
+data:  heart$age and heart$diagnosis
+S = 3308051, p-value = 2.417e-05
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+      rho 
+0.2423668 
+
+
+Interpretation note
+
+The model was evaluated on a held-out test set. Performance should be interpreted cautiously because this is a small public dataset from a single source. Future work could use repeated cross-validation and external validation for a more robust estimate of performance.

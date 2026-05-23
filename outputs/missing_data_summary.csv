@@ -1,0 +1,15 @@
+"variable","missing_count","missing_percent"
+"age",0,0
+"sex",0,0
+"chest_pain",0,0
+"resting_bp",0,0
+"cholesterol",0,0
+"fasting_blood_sugar",0,0
+"resting_ecg",0,0
+"max_heart_rate",0,0
+"exercise_angina",0,0
+"oldpeak",0,0
+"slope",0,0
+"major_vessels",4,1.32
+"thal",2,0.66
+"diagnosis",0,0
