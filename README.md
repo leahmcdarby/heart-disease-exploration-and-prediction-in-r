@@ -101,6 +101,7 @@ The 'outputs' folder contains the saved tables, plots and model results generate
 - 'diagnosis_level_counts.png'
 - 'age_by_diagnosis_level.png'
 - 'max_heart_rate_by_disease.png'
+- 'outcome_counts.png'
 - 'oldpeak_by_disease.png'
 - 'exercise_angina_by_disease.png'
 - 'pca_disease_plot.png'
