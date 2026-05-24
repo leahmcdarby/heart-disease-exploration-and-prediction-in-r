@@ -5,7 +5,8 @@ Exploratory analysis and interpretable prediction using the UCI Heart Disease da
 ## Project overview
 
 This project uses the public UCI Cleveland Heart Disease dataset to explore clinical variables associated with heart disease and build a simple logistic regression model.
-The dataset can be accessed here: https://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/processed.cleveland.data
+The dataset is available from the UCI Machine Learning Repository: https://archive.ics.uci.edu/dataset/45/heart+disease
+This analysis uses the processed Cleveland file: `processed.cleveland.data`.
 
 The aim of this project is to demonstrate a clear R workflow including data cleaning, exploratory summaries, visualisation, unsupervised exploration, feature selection, model fitting and model evaluation.
 
