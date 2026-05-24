@@ -30,7 +30,7 @@ if (!dir.exists("outputs")) {
 }
 
 
-# 4. Check missing data -
+# 4. Check missing data 
 
 missing_table <- data.frame(
   variable = names(heart),
@@ -109,7 +109,7 @@ write.csv(
 )
 
 
-# 7. Exploratory visualisation -
+# 7. Exploratory visualisation 
 
 # Age distribution
 png("outputs/age_histogram.png", width = 800, height = 600)
