@@ -1,3 +1,5 @@
-"","0","1"
-"0",41,9
-"1",5,34
+"Predicted","Actual","Count"
+"No disease","No disease",41
+"Disease","No disease",5
+"No disease","Disease",9
+"Disease","Disease",34
